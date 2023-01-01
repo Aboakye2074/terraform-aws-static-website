@@ -31,10 +31,9 @@ resource "aws_s3_bucket_versioning" "thisRedirect" {
 resource "aws_s3_bucket_website_configuration" "thisWWW" {
   bucket = aws_s3_bucket.thisWWW.bucket
 
-  index_document {
-    suffix = "index.html"
+  redirect_all_requests_to {
+    host_name = var.domainName
+    protocol  = "https"
   }
-  error_document {
-    key = "error.html"
-  }
+
 }
