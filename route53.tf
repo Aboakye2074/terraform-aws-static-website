@@ -14,9 +14,6 @@ resource "aws_route53_record" "bahaanoah-com" {
     evaluate_target_health = false
   }
 
-  depends_on = [
-    aws_cloudfront_distribution.bahaanoah-com-s3_distribution
-  ]
 }
 
 resource "aws_route53_record" "www-bahaanoah-com" {
@@ -29,8 +26,4 @@ resource "aws_route53_record" "www-bahaanoah-com" {
     zone_id                = aws_cloudfront_distribution.www-bahaanoah-com-s3_distribution.hosted_zone_id
     evaluate_target_health = false
   }
-
-  depends_on = [
-    aws_cloudfront_distribution.www-bahaanoah-com-s3_distribution
-  ]
 }

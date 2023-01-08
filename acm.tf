@@ -33,7 +33,7 @@ resource "aws_route53_record" "validation" {
   ttl             = 60
   type            = each.value.type
   zone_id         = aws_route53_zone.primary.zone_id
-
+  provider        = aws.virginia
   depends_on = [
     aws_acm_certificate.this,
     aws_route53_zone.primary

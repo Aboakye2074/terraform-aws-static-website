@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "this" {
-  bucket = var.domainName
-  tags   = var.tags
+  bucket        = var.domainName
+  tags          = var.tags
+  force_destroy = true
 }
 
 
