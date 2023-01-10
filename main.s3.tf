@@ -37,6 +37,6 @@ resource "aws_s3_bucket_website_configuration" "this" {
     suffix = "index.html"
   }
   error_document {
-    key = "error.html"
+    key = "404/index.html"
   }
 }
