@@ -1,4 +1,4 @@
-resource "aws_cloudfront_distribution" "bahaanoah-com-s3_distribution" {
+resource "aws_cloudfront_distribution" "tonboazztek-com-s3_distribution" {
   origin {
     domain_name         = aws_s3_bucket_website_configuration.this.website_endpoint
     origin_id           = aws_s3_bucket_website_configuration.this.website_endpoint
