@@ -2,5 +2,5 @@ tags = {
   "terraform" = true
 }
 
-domainName    = "bahaanoah.com"
-wwwDomainName = "www.bahaanoah.com"
+domainName    = "tonboazztek.com"
+wwwDomainName = "www.tonboazztek.com"
