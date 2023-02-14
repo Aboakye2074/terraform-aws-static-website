@@ -2,7 +2,7 @@
 provider "aws" {
   alias   = "virginia"
   region  = "us-east-1"
-  profile = "terraform"
+  profile = "default"
 }
 
 resource "aws_acm_certificate" "this" {
